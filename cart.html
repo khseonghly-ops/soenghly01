@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Homepage</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Bayon&family=Bebas+Neue&family=Dangrek&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Koulen&family=Momo+Trust+Display&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Oswald:wght@200..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <nav class="nav-bar name">
+        <div class="logo-box"><a href="index.html">MasterIT Store</a></div>
+        <ul class="menu-box">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="product.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="cart-box">
+          <a href="cart.html"><i class="fa-solid fa-bag-shopping"></i></a>
+        </div>
+        <div class="drop-down">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <div class="small-container">
+        <table>
+          <tr>
+            <th>Product</th>
+            <th>Quantity</th>
+            <th>Subtotal</th>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="f-pro1.png" alt="" />
+                <div>
+                  <p>Red Printed T-Shirt</p>
+                  <small>Price $500.00</small>
+                  <br />
+                  <a href="">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>$500.00</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="f-pro2.jpg" alt="" />
+                <div>
+                  <p>HRX Shoes</p>
+                  <small>Price $1500.00</small>
+                  <br />
+                  <a href="">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>$1500.00</td>
+          </tr>
+          <tr>
+            <td>
+              <div class="cart-info">
+                <img src="f-pro3.jpg" alt="" />
+                <div>
+                  <p>Reebok Tracksuit</p>
+                  <small>Price $1500.00</small>
+                  <br />
+                  <a href="">Remove</a>
+                </div>
+              </div>
+            </td>
+            <td><input type="number" value="1" /></td>
+            <td>$1500.00</td>
+          </tr>
+        </table>
+
+        <div class="total-price">
+          <table>
+            <tr>
+              <td>Subtotal</td>
+              <td>$3500.00</td>
+            </tr>
+            <tr>
+              <td>Tax</td>
+              <td>$15.00</td>
+            </tr>
+            <tr>
+              <td>Total</td>
+              <td>$3515.00</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <footer class="footer-box">
+        <p>Copyright © 2023 - MasterIT Store</p>
+      </footer>
+      <script>
+        const dropDown = document.querySelector(".drop-down");
+        const menuBox = document.querySelector(".menu-box");
+
+        dropDown.addEventListener("click", function (e) {
+          e.preventDefault();
+          menuBox.classList.toggle("show");
+        });
+      </script>
+    </div>
+  </body>
+</html>
